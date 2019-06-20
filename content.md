@@ -101,14 +101,14 @@ Example: [`chamber`](https://github.com/segmentio/chamber)
 ### Usage
 
 ```bash
-# chamber write $namespace $key $value
+# chamber write $service $key $value
 chamber write terraform mysql_root pizzapassword
 ```
 ]
 --
 .right-column[
 ```bash
-# chamber exec $namespace -- $command
+# chamber exec $service -- $command
 chamber exec terraform -- terraform apply
 ```
 ]
