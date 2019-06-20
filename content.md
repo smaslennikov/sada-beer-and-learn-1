@@ -112,6 +112,12 @@ chamber write terraform mysql_root pizzapassword
 chamber exec terraform -- terraform apply
 ```
 ]
+--
+.right-column[
+### Further reading
+
+Slightly more informative [CloudPosse `chamber` docs](https://docs.cloudposse.com/tools/chamber/)
+]
 ---
 .left-column[
  ## Agenda
