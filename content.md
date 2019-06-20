@@ -73,5 +73,61 @@ TODO
 ]
 --
 .right-column[
-TODO
+### Store secrets outside of git
+
+Example: [`chamber`](https://github.com/segmentio/chamber)
+]
+--
+.right-column[
+* uses AWS's SSM & KMS
+]
+--
+.right-column[
+* populates environment variables with secrets
+]
+--
+.right-column[
+* executes defined command on retrieval
+]
+---
+.left-column[
+ ## Agenda
+ ## Problem statement
+ ## Native solution
+ ## External solution
+ ## Going around the problem
+]
+.right-column[
+### Usage
+
+```bash
+# chamber write $service $key $value
+chamber write terraform mysql_root pizzapassword
+```
+]
+--
+.right-column[
+```bash
+# chamber exec $service -- $command
+chamber exec terraform -- terraform apply
+```
+]
+--
+.right-column[
+### Further reading
+
+Slightly more informative [CloudPosse `chamber` docs](https://docs.cloudposse.com/tools/chamber/)
+]
+---
+.left-column[
+ ## Agenda
+ ## Problem statement
+ ## Native solution
+ ## External solution
+ ## Going around the problem
+]
+.right-column[
+### SADA's GCP port of chamber
+
+- The future is near!
 ]
