@@ -73,5 +73,23 @@ TODO
 ]
 --
 .right-column[
-TODO
+### Store secrets outside of git.
+
+Example: `chamber`
+
+* cli tool that uses AWS's SSM+KMS
+* populates secrets in environment variables in shell
+* [https://github.com/segmentio/chamber](https://github.com/segmentio/chamber)
+]
+--
+.right-column[
+### Usage
+```bash
+//chamber exec <service> -- <command>
+chamber exec terraform -- terraform apply
+```
+]
+--
+.right-column[
+### Let's port it to GCP
 ]
