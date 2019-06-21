@@ -40,7 +40,13 @@ layout: false
 ]
 --
 .right-column[
-TODO
+### Problem
+- Secrets in VCS
+]
+--
+.right-column[
+### Non-solutions
+- Private repositories
 ]
 ---
 .left-column[
