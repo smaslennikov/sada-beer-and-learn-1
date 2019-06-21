@@ -38,7 +38,6 @@ layout: false
  ## Agenda
  ## Problem statement
 ]
---
 .right-column[
 ### Problem
 - Secrets in VCS
@@ -54,9 +53,8 @@ layout: false
  ## Problem statement
  ## Native solution
 ]
---
 .right-column[
-### [Home-made GnuPG wrapper](https://github.com/smaslennikov/include.mk#gnupg)
+### [Home-made GnuPG wrapper](https://github.com/sadasystems/include.mk#gnupg)
 ]
 --
 .right-column[
@@ -77,9 +75,84 @@ layout: false
  ## Agenda
  ## Problem statement
  ## Native solution
- ## External solution
+]
+.right-column[
+### GnuPG wrapper process
+- [Create GnuPG keypair](https://help.github.com/en/articles/generating-a-new-gpg-key)
 ]
 --
+.right-column[
+- Add [Makefile](https://github.com/sadasystems/include.mk/blob/master/Makefile) in your repository
+]
+---
+.left-column[
+ ## Agenda
+ ## Problem statement
+ ## Native solution
+]
+.right-column[
+### GnuPG wrapper process
+![Root Makefile example](images/root-Makefile.png)
+]
+---
+.left-column[
+ ## Agenda
+ ## Problem statement
+ ## Native solution
+]
+.right-column[
+### GnuPG wrapper process
+- Define recipients' emails
+- Define path of secret
+- `.gitignore` the secret
+]
+---
+.left-column[
+ ## Agenda
+ ## Problem statement
+ ## Native solution
+]
+.right-column[
+### GnuPG wrapper process
+![Makefile example](images/Makefile.png)
+]
+---
+.left-column[
+ ## Agenda
+ ## Problem statement
+ ## Native solution
+]
+.right-column[
+### GnuPG wrapper process
+- Run `make encrypt`
+]
+---
+.left-column[
+ ## Agenda
+ ## Problem statement
+ ## Native solution
+]
+.right-column[
+### GnuPG wrapper process
+![Makefile example](images/decrypted.png)
+]
+---
+.left-column[
+ ## Agenda
+ ## Problem statement
+ ## Native solution
+]
+.right-column[
+### GnuPG wrapper process
+![Makefile example](images/encrypted.png)
+]
+---
+.left-column[
+ ## Agenda
+ ## Problem statement
+ ## Native solution
+ ## External solution
+]
 .right-column[
 ### [Keybase](https://keybase.io/blog/encrypted-git-for-everyone)
 ]
