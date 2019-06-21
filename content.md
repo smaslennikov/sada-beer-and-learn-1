@@ -75,27 +75,31 @@ layout: false
  ## Agenda
  ## Problem statement
  ## Native solution
+ ### GnuPG wrapper process
 ]
 .right-column[
-### GnuPG wrapper process
 - [Create GnuPG keypair](https://help.github.com/en/articles/generating-a-new-gpg-key)
 ]
 --
 .right-column[
-- Share public keys with your team - via Keybase or in the repository
+- Share public keys
 ]
 --
 .right-column[
 - Add [Makefile](https://github.com/sadasystems/include.mk/blob/master/Makefile) in your repository
+]
+--
+.right-column[
+- Define recipients' emails
 ]
 ---
 .left-column[
  ## Agenda
  ## Problem statement
  ## Native solution
+ ### GnuPG wrapper process
 ]
 .right-column[
-### GnuPG wrapper process
 ![Root Makefile example](images/root-Makefile.png)
 ]
 ---
@@ -103,16 +107,34 @@ layout: false
  ## Agenda
  ## Problem statement
  ## Native solution
+ ### GnuPG wrapper process
 ]
 .right-column[
-### GnuPG wrapper process
-- Define recipients' emails
 - Define path of secret
-- `.gitignore` the secret
 ]
 --
 .right-column[
-
+- `.gitignore` the secret
+]
+---
+.left-column[
+ ## Agenda
+ ## Problem statement
+ ## Native solution
+ ### GnuPG wrapper process
+]
+.right-column[
+![Makefile example](images/Makefile.png)
+]
+---
+.left-column[
+ ## Agenda
+ ## Problem statement
+ ## Native solution
+ ### GnuPG wrapper process
+]
+.right-column[
+#### File tree
 ```
 ├── Makefile                    # root Makefile
 ├── include.mk                  # Makefile includes
@@ -128,24 +150,8 @@ layout: false
             └── sysprep.ps1.asc # encrypted secrets
 ```
 ]
----
-.left-column[
- ## Agenda
- ## Problem statement
- ## Native solution
-]
+--
 .right-column[
-### GnuPG wrapper process
-![Makefile example](images/Makefile.png)
-]
----
-.left-column[
- ## Agenda
- ## Problem statement
- ## Native solution
-]
-.right-column[
-### GnuPG wrapper process
 - Run `make encrypt`
 ]
 ---
@@ -153,9 +159,9 @@ layout: false
  ## Agenda
  ## Problem statement
  ## Native solution
+ ### GnuPG wrapper process
 ]
 .right-column[
-### GnuPG wrapper process
 ![Makefile example](images/decrypted.png)
 ]
 ---
@@ -163,9 +169,9 @@ layout: false
  ## Agenda
  ## Problem statement
  ## Native solution
+ ### GnuPG wrapper process
 ]
 .right-column[
-### GnuPG wrapper process
 ![Makefile example](images/encrypted.png)
 ]
 ---
