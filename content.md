@@ -56,7 +56,21 @@ layout: false
 ]
 --
 .right-column[
-TODO
+### [Home-made GnuPG wrapper](https://github.com/smaslennikov/include.mk#gnupg)
+]
+--
+.right-column[
+#### Pros
+- Secure
+]
+--
+.right-column[
+#### Cons
+- Clunky, difficult to on-board
+]
+--
+.right-column[
+- Difficult to `git diff` and review
 ]
 ---
 .left-column[
@@ -67,7 +81,29 @@ TODO
 ]
 --
 .right-column[
-TODO
+### [Keybase](https://keybase.io/blog/encrypted-git-for-everyone)
+]
+--
+.right-column[
+#### Pros
+- Secure
+]
+--
+.right-column[
+- Easy to `git diff`
+]
+--
+.right-column[
+#### Cons
+- No web UI
+]
+--
+.right-column[
+- No built-in PR tooling
+]
+--
+.right-column[
+- CI must use a Keybase account
 ]
 ---
 .left-column[
