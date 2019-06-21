@@ -82,6 +82,10 @@ layout: false
 ]
 --
 .right-column[
+- Share public keys with your team - via Keybase or in the repository
+]
+--
+.right-column[
 - Add [Makefile](https://github.com/sadasystems/include.mk/blob/master/Makefile) in your repository
 ]
 ---
@@ -105,6 +109,24 @@ layout: false
 - Define recipients' emails
 - Define path of secret
 - `.gitignore` the secret
+]
+--
+.right-column[
+
+```
+├── Makefile                    # root Makefile
+├── include.mk                  # Makefile includes
+├── keys                        # public keys
+└── environments
+    └── v2-dev
+        ├── Makefile            # Makefile per directory with secrets
+        └── secret
+            ├── .gitignore
+            ├── ssh_key
+            ├── ssh_key.asc
+            ├── sysprep.ps1     # plaintext secrets: gitignored
+            └── sysprep.ps1.asc # encrypted secrets
+```
 ]
 ---
 .left-column[
@@ -186,7 +208,6 @@ layout: false
  ## External solution
  ## Going around the problem
 ]
---
 .right-column[
 ### Store secrets outside of git
 
